@@ -16,8 +16,10 @@ class GUI1 extends JFrame{
          cb2 = new JCheckBox("Show Grid");
         pn1 = new JPanel();
         pn1.setLayout(new BoxLayout(pn1, BoxLayout.Y_AXIS));
+        pn1.add(Box.createVerticalGlue());
         pn1.add(cb1);
         pn1.add(cb2);
+        pn1.add(Box.createVerticalGlue());
         pn1.setPreferredSize(new Dimension(120,40));
         pn1.setMaximumSize(new Dimension(120,40));
         lb1 = new JLabel("X:");
@@ -40,8 +42,10 @@ class GUI1 extends JFrame{
         pn22.add(tf2);
         pn2 = new JPanel();
         pn2.setLayout(new BoxLayout(pn2,BoxLayout.Y_AXIS));
+        pn2.add(Box.createVerticalGlue());
         pn2.add(pn21);
         pn2.add(pn22);
+        pn2.add(Box.createVerticalGlue());
         bt1 = new JButton("Ok");
         bt1.setSize(100,30);
         bt1.setMaximumSize(new Dimension(100,30));
@@ -54,9 +58,13 @@ class GUI1 extends JFrame{
         bt3.setMaximumSize(new Dimension(100,30));
         pn3 = new JPanel();
         pn3.setLayout(new BoxLayout(pn3,BoxLayout.Y_AXIS));
+        pn3.add(Box.createVerticalGlue());
         pn3.add(bt1);
+        pn3.add(Box.createVerticalStrut(5));
         pn3.add(bt2);
+        pn3.add(Box.createVerticalStrut(5));
         pn3.add(bt3);
+        pn3.add(Box.createVerticalGlue());
         pn3.setLocation(20,pn3.getY()/2);
         frame = new JFrame();
         frame.setLayout(new BorderLayout());
